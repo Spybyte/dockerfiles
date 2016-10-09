@@ -1,4 +1,5 @@
 FROM spybyte/rpi-homebridge:latest
+MAINTAINER Spybyte <spybyte@online.de>
 
 RUN apt-get update
 

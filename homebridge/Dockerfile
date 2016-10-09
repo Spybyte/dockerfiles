@@ -1,4 +1,5 @@
 FROM spybyte/rpi-node:4LTS
+MAINTAINER Spybyte <spybyte@online.de>
 
 RUN apt-get -q update && apt-get install -qy \
     build-essential \

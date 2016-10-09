@@ -14,6 +14,7 @@ RUN apt-get update \
 	    libffi-dev \
 	    libxslt-dev \
 	    libxml2-dev \
+		libyaml-cpp-dev \
 	    openssl \
 		libssl-dev \
 	    tar \

@@ -1,4 +1,5 @@
 FROM spybyte/rpi-node:4LTS
+MAINTAINER Spybyte <spybyte@online.de>
 
 RUN mkdir -p /opt/iobroker
 

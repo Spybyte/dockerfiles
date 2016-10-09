@@ -1,4 +1,5 @@
 FROM resin/rpi-raspbian:jessie 
+MAINTAINER Spybyte <spybyte@online.de>
 
 RUN apt-get update && \  
     apt-get -qy install curl \
