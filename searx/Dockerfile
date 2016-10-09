@@ -14,7 +14,6 @@ RUN apt-get update \
 	    libffi-dev \
 	    libxslt-dev \
 	    libxml2-dev \
-		libyaml-cpp-dev \
 	    openssl \
 		libssl-dev \
 	    tar \
@@ -22,6 +21,7 @@ RUN apt-get update \
         python \
         python-dev \
 		python-pip \
+		libyaml-dev \
 	&& pip install -r https://raw.githubusercontent.com/asciimoo/searx/master/requirements.txt \
 	&& mkdir /usr/local/searx && cd /usr/local/searx \
     && wget -qO- https://github.com/asciimoo/searx/archive/master.tar.gz | tar xz --strip 1 \
