@@ -1,8 +1,7 @@
 FROM resin/rpi-raspbian:jessie
 MAINTAINER Spybyte <spybyte@online.de>
 
-ENV BASE_URL=False IMAGE_PROXY=False \
-    UID=991 GID=991
+ENV BASE_URL=False IMAGE_PROXY=False
 
 RUN apt-get update \  
     && apt-get -qy install curl \
