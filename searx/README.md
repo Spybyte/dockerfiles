@@ -2,8 +2,8 @@
 
 ![](https://i.goopics.net/ls.png)
 
-####What is rpi-searx?
-rpi-searx is docker image for the raspberry pi based on work by [winderfall/searx](https://github.com/Wonderfall/dockerfiles/tree/master/searx)
+#### What is rpi-searx?
+rpi-searx is docker image for the raspberry pi based on work by [wonderfall/searx](https://github.com/Wonderfall/dockerfiles/tree/master/searx)
 
 #### Features
 - Based on [resin/rpi-raspbian:jessie](https://hub.docker.com/r/resin/rpi-raspbian)
@@ -17,6 +17,6 @@ rpi-searx is docker image for the raspberry pi based on work by [winderfall/sear
 #### Ports
 - **8888** 
 
-####Start
+#### Start
 docker run -d -restart=always -p 80:8888 --name searx spybyte/rpi-searx:latest
 
