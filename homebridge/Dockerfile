@@ -1,4 +1,4 @@
-FROM spybyte/rpi-node:4LTS
+FROM spybyte/rpi-node:6LTS
 MAINTAINER Spybyte <spybyte@online.de>
 
 EXPOSE 5353 51826

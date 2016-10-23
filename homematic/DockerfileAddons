@@ -3,9 +3,9 @@ MAINTAINER Spybyte <spybyte@online.de>
 
 EXPOSE 2001 5353 9090 51826
 
-RUN npm install -g --unsafe-perm homebridge-homematic homebridge-harmonyhub \
-	&& mkdir -p ~/.homebridge
+RUN npm install -g --unsafe-perm homebridge-homematic homebridge-harmonyhub@0.1.1 homebridge-http \
+	&& mkdir -p /root/.homebridge
 
-ADD config.json ~/.homebridge/config.json
+ADD config.json /root/.homebridge/config.json
 
 
