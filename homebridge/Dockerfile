@@ -6,18 +6,21 @@ WORKDIR /usr/local/homebridge
 
 RUN apt-get -q update \
 	&& apt-get install -qy \
+		avahi-daemon \
+		build-essential \
+    	dbus \
     	git \
     	libavahi-compat-libdnssd-dev \
     	libasound2-dev \
-    	avahi-daemon \
-    	dbus \
-    	python \
 	&& npm install -g --unsafe-perm homebridge \
 	&& mkdir -p /var/run/dbus \
 	&& apt-get -qy remove \
 		libavahi-compat-libdnssd-dev \
     	libasound2-dev \
-	&& apt-get clean
+	&& apt-get clean \
+	&& apt-get autoremove \
+	&& apt-get remove --purge build-essential \
+	&& rm -rf /var/lib/apt/lists/*
 		
 ADD run.sh run.sh
 
