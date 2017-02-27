@@ -6,6 +6,6 @@ EXPOSE 2001 5353 9090 51826
 RUN npm install -g --unsafe-perm homebridge-homematic homebridge-harmonyhub homebridge-http \
 	&& mkdir -p /root/.homebridge
 
-ADD config.json /root/.homebridge/config.json
+COPY config.json /root/.homebridge/config.json
 
 

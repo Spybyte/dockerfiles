@@ -14,15 +14,12 @@ RUN apt-get -q update \
     	libasound2-dev \
 	&& npm install -g --unsafe-perm homebridge \
 	&& mkdir -p /var/run/dbus \
-	&& apt-get -qy remove \
-		libavahi-compat-libdnssd-dev \
-    	libasound2-dev \
 	&& apt-get clean \
 	&& apt-get autoremove \
 	&& apt-get remove --purge build-essential \
 	&& rm -rf /var/lib/apt/lists/*
 		
-ADD run.sh run.sh
+COPY run.sh run.sh
 
 RUN chmod +x run.sh
 

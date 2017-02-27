@@ -12,7 +12,7 @@ RUN npm cache clean \
 	&& update-rc.d -f iobroker.sh remove \
 	&& echo $(hostname) >.install_host
 
-ADD run.sh run.sh
+COPY run.sh run.sh
 RUN chmod 775 run.sh
 
 
